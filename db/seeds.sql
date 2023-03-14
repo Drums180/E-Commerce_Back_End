@@ -1,16 +1,16 @@
-INSERT INTO Category (category_name)
+INSERT INTO category (category_name)
 VALUES
   ('Electronics'),
   ('Clothing'),
   ('Books');
 
-INSERT INTO Tag (tag_name)
+INSERT INTO tag (tag_name)
 VALUES
   ('New'),
   ('Sale'),
   ('Trending');
 
-INSERT INTO Product (product_name, price, stock, category_id)
+INSERT INTO product (product_name, price, stock, category_id)
 VALUES
   ('iPhone 12', 999.99, 50, 1),
   ('MacBook Pro', 1499.99, 30, 1),
@@ -18,7 +18,7 @@ VALUES
   ('Jeans', 39.99, 75, 2),
   ('The Great Gatsby', 9.99, 200, 3);
 
-INSERT INTO ProductTag (product_id, tag_id)
+INSERT INTO product_tag (product_id, tag_id)
 VALUES
   (1, 1),
   (2, 1),
