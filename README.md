@@ -31,34 +31,6 @@ To start the application, run the following command:
 npm start
 ```
 
-## Routes
-
-Categories
-GET /api/categories: Returns an array of all categories, including their associated products.
-GET /api/categories/:id: Returns a single category by ID, including its associated products.
-POST /api/categories: Creates a new category with the provided name.
-PUT /api/categories/:id: Updates the name of an existing category.
-DELETE /api/categories/:id: Deletes a category and all of its associated products.
-Products
-GET /api/products: Returns an array of all products, including their associated category and tags.
-GET /api/products/:id: Returns a single product by ID, including its associated category and tags.
-POST /api/products: Creates a new product with the provided name, price, stock, category ID, and tags (if any).
-PUT /api/products/:id: Updates the name, price, and/or stock of an existing product.
-DELETE /api/products/:id: Deletes a product and all of its associated tags.
-Tags
-GET /api/tags: Returns an array of all tags, including their associated products.
-GET /api/tags/:id: Returns a single tag by ID, including its associated products.
-POST /api/tags: Creates a new tag with the provided name.
-PUT /api/tags/:id: Updates the name of an existing tag.
-DELETE /api/tags/:id: Deletes a tag and all of its associated products.
-Environment Variables
-
-The application uses the following environment variables:
-
-DB_NAME: The name of the MySQL database.
-DB_USER: The username to connect to the MySQL database.
-DB_PW: The password to connect to the MySQL database.
-
 ## Criteria 1: Connect to a database using Sequelize
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file, THEN I am able to connect to a database using Sequelize.
 To connect to the database using Sequelize, the application reads the database name, username, and password from environment variables. Here is an example of how this is done in the config/connection.js file:
