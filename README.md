@@ -256,5 +256,5 @@ You are required to submit BOTH of the following for review:
 
 * The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
 
----
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Walkthrough video
+https://youtu.be/fQ3CieO7Aas
